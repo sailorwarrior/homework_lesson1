@@ -8,4 +8,4 @@ class Figure:
         if isinstance(figure, Figure):
             return self.area + figure.area
         else:
-            raise ValueError
+            raise ValueError('Choose correct figure name to add')

@@ -1,10 +1,16 @@
 from src.Figure import Figure
 
 
-class Square(Figure):
+class Circle(Figure):
     PI = 3.14
 
     def __init__(self, r):
         self.r = r
-        self.perimeter = 2 * r * self.PI
-        self.area = r ** 2 * self.PI
+
+    @property
+    def perimeter(self):
+        return 2 * self.r * self.PI
+
+    @property
+    def area(self):
+        return self.r ** 2 * self.PI

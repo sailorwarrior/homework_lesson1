@@ -5,8 +5,11 @@ class Rectangle(Figure):
     def __init__(self, a, b):
         self.a = a
         self.b = b
-        self.perimeter = a * 2 + b * 2
-        self.area = a * b
 
-rectangle = Rectangle(2, 3)
-ra = rectangle.area
+    @property
+    def perimeter(self):
+        return self.a * 2 + self.b * 2
+
+    @property
+    def area(self):
+        return self.a * self.b
