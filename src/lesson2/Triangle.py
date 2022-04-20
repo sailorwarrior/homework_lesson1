@@ -1,4 +1,4 @@
-from src.Figure import Figure
+from src.lesson2.Figure import Figure
 
 
 def check_triangle(a, b, c):
